@@ -22,16 +22,17 @@ class LoginForm extends React.Component {
 
 
   }
-
+  
   handleInputChange = (event) => {
     // console.log(event)
     this.setState ({
       [event.target.name]: event.target.value
-
+      
     })
   }
-
+  
   render() {
+    const {username, password} = this.state
     return (
       <form onSubmit={this.handleSubmit}>
         <div>
